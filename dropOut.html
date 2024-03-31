@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameOver</title>
+    <style media="screen">
+      /*这段CSS是index.html的CSS里复制来的，不直接引用是因为写这个的时候改了一点
+      写得太乱了 555 */
+      body, html {
+          height: 100%;
+          margin: 0;
+          overflow: hidden;
+      }
+      .fullscreen-link {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          background-color: transparent;
+          cursor: pointer;
+          overflow: hidden;
+      }
+      body{
+        background-color: black;
+      }
+      .center-text {
+          position: absolute;
+          top: 50%;
+          left: 30%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          animation: breath 3s infinite alternate; /* 呼吸动画效果 */
+          size:500px;
+
+      }
+      @keyframes breath {
+          0% {
+              transform: scale(1); /* 初始大小 */
+          }
+          100% {
+              transform: scale(1.1); /* 呼吸效果 */
+          }
+      }
+    </style>
+</head>
+<body>
+  <!-- 创建一个全屏链接 -->
+  <a href="StartPage.html" class="fullscreen-link" id="link">
+      <!-- 添加文字 -->
+      <div class="center-text">
+          <!-- 用id标记h1元素 -->
+          <h1 id="headline">Game Over!</h1>
+          <!-- 将<p>放在一个独立的div中，以便设置样式 -->
+          </div>
+      </div>
+    </a>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('headline').innerText = "你由于一直不学习导致挂科，最后退学了。提示：多少学一点吧~";
+            }, 3000); // 5秒后替换文字
+        };
+    </script>
+</body>
+</html>
