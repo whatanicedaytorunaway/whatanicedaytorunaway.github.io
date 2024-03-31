@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>梧桐山</title>
+  <style>
+    body {
+      background-image: url("hangOutC.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    .image-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      top:70%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="image-container">
+    <img src="嚼东西猫.gif" alt="图片2" onclick="redirectToNewPage()">
+  </div>
+  <h1>来爬山了！</h1>
+  <h1>到了深圳第一高峰梧桐山</h1>
+  <h1>非常幸运地看到了日出</h1>
+
+  <div class="additional-content">
+<p>还要去别的地方吗？</p>
+<button onclick="redirectToAnotherPage()">再去逛逛</button>
+<button onclick="endExperience()">结束</button>
+</div>
+
+  <script>
+    function redirectToNewPage() {
+      window.location.href = "hangOutC.jpg";
+    }
+    function redirectToAnotherPage() {
+    window.location.href = "hangOut.html";
+    }
+
+    function endExperience() {
+    window.location.href = "endPage.html";
+    }
+  </script>
+</body>
+
+</html>
