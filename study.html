@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>我学了几章？</title>
+    <link rel="stylesheet" href="./scene1.css">
+    <style media="screen">
+    #imageA {
+        float: left;
+        margin-left: 120px;
+        max-width: 45%;
+        max-height: 45%;
+        margin-top: 30px;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+    }
+    #imageB {
+      float: right;
+      margin-left: 40px;
+      margin-right: 220px;
+      margin-top: 100px;
+      border: 5px solid rgba(255, 255, 255, 0.5);
+    }
+    #imageB:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>翻开书</h1>
+    <h1>虽然还没正式上课，但是来都来了！</h1>
+    <h1>请开始学习！</h1>
+
+    <div class="text-container">
+        <input type="text" id="userInput" placeholder="我今天学到第几章了？（输入1/2/3...）">
+        <button class="submit-button" onclick="submitText()">提交</button>
+    </div>
+
+    <img id="imageA" src="book1.jpg" alt="图片A">
+    <img id="imageB" src="codingCat.gif" alt="图片B" onclick="replaceImageAndPopup()">
+
+    <script>
+        function replaceImageAndPopup() {
+            var imageA = document.getElementById("imageA");
+            imageA.src = "book2.jpg";
+            alert("你已完成学习！");
+        }
+    </script>
+
+    <script type="text/javascript">
+
+        alert("我来到了图书馆！")
+        var bookImage = document.getElementById('bookImage');
+        var bookLink = document.getElementById('Cat');
+
+        // 添加点击事件监听器
+        bookLink.addEventListener('click', function() {
+            bookImage.src = 'book2.jpg';
+            alert("我已完成学习！");
+        });
+
+        function submitText() {
+            var userInput = document.getElementById('userInput').value;
+
+            if (userInput === '3') {
+                alert("正确！原来我真的有好好学习~");
+                // 在用户关闭弹窗后跳转到另一个新的网页
+                window.location.href = 'hangOut.html';
+            } else {
+                alert("错误！学习要专注一点！");
+            }
+        }
+        </script>
+</body>
+</html>
