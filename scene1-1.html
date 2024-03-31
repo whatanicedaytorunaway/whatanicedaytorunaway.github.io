@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./scene1.css">
+<title>场景1</title>
+<style media="screen">
+
+</style>
+</head>
+<body>
+<h1>来到了图书馆门口！</h1>
+<h1>来都来了！</h1>
+<h1>要进去预习一下吗？</h1>
+
+<img src="scene1-1.jpg" alt="Scene 1 Image">
+
+<div class="button-container">
+    <button class="button left"></button>
+    <input type="text" class="description left" value="不去！">
+    <button class="button right"></button>
+    <input type="text" class="description right" value="还是要预习一下">
+</div>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    const leftButton = document.querySelector('.left');
+    const rightButton = document.querySelector('.right');
+
+    leftButton.addEventListener('click', function() {
+        window.location.href = 'dropOut.html';
+    });
+
+    rightButton.addEventListener('click', function() {
+        window.location.href = 'sceneLibrary.html';
+    });
+
+});
+</script>
+</body>
+</html>
