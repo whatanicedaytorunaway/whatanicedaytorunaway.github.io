@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./scene1.css">
+<title>场景1</title>
+<style media="screen">
+
+</style>
+</head>
+<body>
+<h1>终于开学了！！</h1>
+<h1>见到了新室友！</h1>
+<h1>大学生活真有趣！</h1>
+
+<img src="scene1.jpg" alt="Scene 1 Image">
+
+<div class="button-container">
+    <button class="button left"></button>
+    <input type="text" class="description left" value="出去逛逛">
+    <button class="button right"></button>
+    <input type="text" class="description right" value="我只爱学习">
+</div>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    const leftButton = document.querySelector('.left');
+    const rightButton = document.querySelector('.right');
+
+    leftButton.addEventListener('click', function() {
+        window.location.href = 'scene1-1.html';
+    });
+
+    rightButton.addEventListener('click', function() {
+        window.location.href = 'sceneLibrary.html';
+    });
+
+});
+</script>
+</body>
+</html>
