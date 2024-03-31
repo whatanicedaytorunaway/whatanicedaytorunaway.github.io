@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+    body {
+        background-color: black;
+    }
+    p {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 50px;
+    }
+    </style>
+    <title>结束啦</title>
+</head>
+<body onclick="redirectToStartPage()">
+    <p id="1" style="display: none;">看来大学真是一个不错的地方呢</span></p>
+    <p id="2" style="display: none;">可以学到新的知识</p>
+    <p id="3" style="display: none;">也可以自由地探索世界</p>
+    <p id="4" style="display: none;">祝屏幕前的你无论处在人生的什么阶段</p>
+    <p id="5" style="display: none;">都永远自由愉快</p>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        document.getElementById("1").style.display = "block";
+    }, 2000); // 2秒后显示ID为1的段落
+
+    setTimeout(function() {
+        document.getElementById("2").style.display = "block";
+    }, 4000); // 4秒后显示ID为2的段落
+
+    setTimeout(function() {
+        document.getElementById("3").style.display = "block";
+    }, 6000); //以此类推~
+
+    setTimeout(function() {
+        document.getElementById("4").style.display = "block";
+    }, 8000);
+
+    setTimeout(function() {
+        document.getElementById("5").style.display = "block";
+    }, 10000); 
+});
+
+function redirectToStartPage() {
+    window.location.href = "end.html";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>片尾花絮（？）</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-size: 24px;
+    color: black;
+  }
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.5s ease; /* 添加过渡效果 */
+    text-align: center;
+  }
+  h1 {
+    color: purple;
+    background-color: rgba(255, 255, 255, 0.5);
+padding: 10px; 
+display: inline-block;
+  }
+</style>
+</head>
+<body>
+<h1 id="caption">Caption 1</h1> <!-- 显示文字的元素 -->
+<script>
+  var images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg','11.jpg','12.jpg']; // 图片列表
+  var captions = ['2020-9-5 初次见面',
+  '2021-3-13 明明学了 但是总学不会',
+   '给书院的乒乓球队设计的LOGO~',
+    '夜爬梧桐山 绝对的震撼',
+    '书院的高桌晚宴~第一次见到电视上的人！',
+     '2021-5-17 5：17暑课 通宵复习 看到无人机',
+     '散步圣地：大运神仙湖',
+      '最喜欢的自习室景色！（没有之一）',
+      '2021-7-8盛夏，神仙湖',
+      'Python，当时就是学不会　现在会了就行吧（叹气）',
+      '2021-12-30 圣诞节 再见啦!',
+      '2024-2-15 我只是路过再看一眼!~wish us a bright future~'];
+  var currentIndex = 0; // 当前图片索引
+
+  function changeBackground() {
+    document.body.style.backgroundImage = 'url(' + images[currentIndex] + ')'; // 切换背景图片
+    document.getElementById('caption').textContent = captions[currentIndex]; // 显示对应的文字
+    currentIndex++; // 增加索引以显示下一张图片
+    if (currentIndex >= images.length) {
+      clearInterval(interval); // 清除定时器
+    }
+  }
+
+  changeBackground(); // 加载页面时立即显示第一张图片和文字
+  var interval = setInterval(changeBackground, 5000);
+</script>
+</body>
+</html>
