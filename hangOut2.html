@@ -34,15 +34,28 @@
     <div class="image-container">
       <img src="困猫.gif" alt="图片2" onclick="redirectToNewPage()">
     </div>
-    <h1>又来图书馆学习！</h1>
-    <h1>我爱学习</h1>
-    <h1>学习使我快乐</h1>
+    <h1>在自习室的窗口看到了好看的景色</h1>
+    <h1>其实学习并不是一件痛苦的事情</h1>
+    <h1>对吧？</h1>
+
+    <div class="additional-content">
+    <p><strong>还要去别的地方吗？</strong></p>
+    <button onclick="redirectToAnotherPage()">再去逛逛</button>
+    <button onclick="endExperience()">结束</button>
+  </div>
 
     <script>
       // 点击图片跳转到新页面
       function redirectToNewPage() {
-        window.location.href = "new_page.html";
+        window.location.href = "hangOutB.jpg";
       }
+      function redirectToAnotherPage() {
+    window.location.href = "hangOut.html";
+  }
+
+  function endExperience() {
+    window.location.href = "endPage.html";
+  }
     </script>
 
 
