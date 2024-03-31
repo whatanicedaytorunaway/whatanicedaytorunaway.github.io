@@ -1,39 +1,30 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>My first styled page</title>
-
-  <link rel="stylesheet" href="mystyle.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点击跳转</title>
+    <link rel="stylesheet" href="style0.css"> <!-- 引入外部CSS文件 -->
 </head>
-
 <body>
+  <!-- 创建一个全屏链接 -->
+  <a href="pre.html" class="fullscreen-link" id="link">
+      <!-- 添加文字 -->
+      <div class="center-text">
+          <!-- 用id标记h1元素 -->
+          <h1 id="headline">所有内容与现实均绝无关联</h1>
+          <!-- 将<p>放在一个独立的div中，以便设置样式 -->
+          </div>
+      </div>
+    </a>
 
-<!-- Site navigation menu -->
-<ul class="navbar">
-  <!--这些链接是随便放的-->
-  <li><a href="https://www.youtube.com/">Home page</a>
-  <li><a href="https://chat.openai.com/auth/login">ChatGPT</a>
-  <li><a href="https://www.otomate.jp/piofiore/img/chara/yang_cos.png">小杨</a>
-  <li><a href="links.html">Links</a>
-</ul>
-
-<!-- Main content -->
-<h1>My first styled page</h1>
-
-<p>Welcome to my styled page!
-
-<p>It lacks images, but at least it has style.
-And it has links, even if they don't go
-anywhere&hellip;
-
-<p>There should be more here, but I don't know
-what yet.
-
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 6 March 2024<br>
-  by Tong WU </address>
-
+    <script>
+        // 使用 JavaScript 来替换h1元素的文字
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('headline').innerText = "点击屏幕任意处以开始游戏";
+            }, 3000); // 5秒后替换文字
+        };
+    </script>
 </body>
-
 </html>
