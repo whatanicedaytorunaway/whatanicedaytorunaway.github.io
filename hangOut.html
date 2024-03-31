@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>出来逛逛！</title>
+    <style>
+    body {
+        background-color: purple;
+        position: relative;
+        display: flex;
+    }
+        /* 设置图片容器的样式 */
+        .image-container {
+            display: flex;
+            justify-content: space-between; /* 从左到右均匀排列 */
+            align-items: center;
+            margin-top: 200px;
+        }
+        /* 设置图片的样式 */
+        .image-container img {
+            width: 30%; /* 图片占据父容器的30%宽度 */
+            height: auto; /* 自适应高度 */
+            cursor: pointer;
+            border: 5px solid rgba(255, 255, 255, 0.5);
+        }
+        .image-container img:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="image-container">
+        <img src="hangOut1.jpg" alt="图片1" onclick="redirectToPage1()">
+        <img src="hangOut2.jpg" alt="图片2" onclick="redirectToPage2()">
+        <img src="hangOut3.jpg" alt="图片3" onclick="redirectToPage3()">
+    </div>
+
+    <script>
+    window.onload = function() {
+    alert("要去哪里逛逛呢？");
+}
+        function redirectToPage1() {
+            window.location.href = "hangOut1.html";
+        }
+        function redirectToPage2() {
+            window.location.href = "hangOut2.html";
+        }
+        function redirectToPage3() {
+            window.location.href = "hangOut3.html";
+        }
+    </script>
+  </body>
+</html>
