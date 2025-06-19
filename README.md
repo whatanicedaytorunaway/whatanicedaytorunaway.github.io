@@ -14,7 +14,7 @@
 
 ### ✨ 体验游戏 
 
-点击这里即可参与小游戏：[whatanicedaytorunaway.github.io](https://www.google.com/search?q=http://whatanicedaytorunaway.github.io)
+点击这里即可参与小游戏：[whatanicedaytorunaway.github.io](http://whatanicedaytorunaway.github.io)
 
 ### 💖 项目感言 
 
@@ -36,7 +36,7 @@ This is a short **university life simulator**. The game presents several choices
 
 ### ✨ Experience the Game
 
-Click here to play the game: [whatanicedaytorunaway.github.io](https://www.google.com/search?q=http://whatanicedaytorunaway.github.io)
+Click here to play the game: [whatanicedaytorunaway.github.io](http://whatanicedaytorunaway.github.io)
 
 ### 💖 Reflections
 
